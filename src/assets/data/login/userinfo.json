@@ -1,0 +1,152 @@
+{
+  "token": "token01",
+  "msg": "SUCCESS",
+  "resCode": 1,
+  "name": "test",
+  "avatar": "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",
+  "introduction": "test",
+  "roles": [
+    {
+      "component": "layout/Layout",
+      "name": "系统管理",
+      "id": "systeManage",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "admin管理",
+          "id": "sm_admin"
+        },
+        {
+          "component": "systemManage/sm_user",
+          "name": "平台用户管理",
+          "id": "sm_user"
+        },
+        {
+          "component": "systemManage/sm_role",
+          "name": "角色管理",
+          "id": "sm_role"
+        },
+        {
+          "component": "systemManage/sm_right",
+          "name": "权限管理",
+          "id": "sm_right"
+        },
+        {
+          "component": "systemManage/sm_ip",
+          "name": "IP管理",
+          "id": "sm_ip"
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "彩票核心后台",
+      "id": "lotteryCore",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "彩种信息管理",
+          "id": "lc_info",
+          "children":[
+            {
+              "component":"systemManage/sm_admin",
+              "name":"一级彩种管理",
+              "id":"first_lc"
+            },
+            {
+              "component":"systemManage/sm_admin",
+              "name":"二级彩种管理",
+              "id":"second_lc"
+            },
+            {
+              "component":"systemManage/sm_admin",
+              "name":"基础信息管理",
+              "id":"basic_info"
+            }
+          ]
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "彩种配置管理",
+          "id": "lc_config",
+          "children":[
+            {
+              "component": "systemManage/sm_admin",
+              "name": "彩种详细配置管理",
+              "id": "lc_detail"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "彩种配置同步管理",
+              "id": "lc_sync"
+            }
+          ]
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "开盘管理",
+          "id": "lc_open",
+          "children":[
+            {
+              "component": "systemManage/sm_admin",
+              "name": "开盘管理",
+              "id": "open_manage"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "游戏控制",
+              "id": "game_control"
+            }
+          ]
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "开奖结果管理",
+          "id": "lc_result",
+          "children":[
+            {
+              "component": "systemManage/sm_admin",
+              "name": "数据供应商管理",
+              "id": "data_supplier"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "开奖数据确认规则管理",
+              "id": "data_confirm"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "供应商接口调用管理",
+              "id": "supplier_api"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "供应商开奖结果查询",
+              "id": "supplier_lottery_result"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "开奖结果确认管理",
+              "id": "result_confirm"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "历史开奖记录查询",
+              "id": "open_history_search"
+            }
+          ]
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "注单结算管理",
+          "id": "lc_bill"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "测试验证管理",
+          "id": "lc_test"
+        }
+      ]
+    }
+  ]
+}
